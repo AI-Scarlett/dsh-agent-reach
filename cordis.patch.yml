@@ -1,0 +1,9 @@
+- insert:
+    - id: dsh-agent-reach-skill-provider
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: dsh-agent-reach
+        includeDefaultRoots: false
+        customSkillDirs:
+          - !!js "process.getBuiltinModule('node:url').fileURLToPath(new URL('skills/', baseUrl))"
+        watch: false

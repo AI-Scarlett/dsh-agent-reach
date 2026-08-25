@@ -26,6 +26,10 @@ Agent Reach CLI 与上游工具。
 上游运行时安装说明：
 [Agent Reach Installation Guide](https://github.com/Panniantong/Agent-Reach/blob/93ae1d18c37b707dec053c7c4f9d91cd8ef8943d/docs/install.md)。
 
+## DSH 兼容声明
+
+本适配层声明 `dsh >=0.1.0-rc.6 <0.2.0`：`rc.7`、`rc.8`、`0.1.1-rc.1` 和 `0.1.1-rc.2` 均为兼容声明。该声明覆盖的是标准 Skill Provider 挂载契约，不代表 Agent Reach Python/CLI、渠道认证或真实 Profile 生命周期已经验收；这些依赖和证据仍需单独检查。
+
 ## DSH 安装
 
 插件商城发布后，在 DSH 中生成安装计划并确认即可。固定 GitHub Commit 会由商城

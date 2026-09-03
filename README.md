@@ -30,6 +30,11 @@ Agent Reach CLI 与上游工具。
 
 本适配层声明 `dsh >=0.1.0-rc.6 <0.2.0`：`rc.7`、`rc.8`、`0.1.1-rc.1` 和 `0.1.1-rc.2` 均为兼容声明。该声明覆盖的是标准 Skill Provider 挂载契约，不代表 Agent Reach Python/CLI、渠道认证或真实 Profile 生命周期已经验收；这些依赖和证据仍需单独检查。
 
+## DSH 兼容
+
+当前适配官方 DSH `0.1.2-rc.1`，并声明 `>=0.1.2-rc.1 <0.2.0`。插件只挂载
+官方 filesystem Skill 适配层，不会替用户安装 Agent Reach 运行时。
+
 ## DSH 安装
 
 插件商城发布后，在 DSH 中生成安装计划并确认即可。固定 GitHub Commit 会由商城

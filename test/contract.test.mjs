@@ -7,7 +7,7 @@ const root = new URL('../', import.meta.url)
 test('package is a standard lifecycle-free DSH bundle', async () => {
   const pkg = JSON.parse(await readFile(new URL('package.json', root), 'utf8'))
   assert.equal(pkg.name, 'dsh-agent-reach')
-  assert.equal(pkg.version, '0.1.0')
+  assert.equal(pkg.version, '0.1.1')
   assert.equal(pkg.dsh.bundle.patch, './cordis.patch.yml')
   for (const name of ['preinstall', 'install', 'postinstall', 'prepare']) {
     assert.equal(pkg.scripts[name], undefined)

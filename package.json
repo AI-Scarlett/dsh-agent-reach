@@ -1,6 +1,6 @@
 {
   "name": "dsh-agent-reach",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Safe DSH skill adapter for the Agent Reach internet access router",
   "private": true,
   "type": "module",
@@ -16,12 +16,13 @@
       "patch": "./cordis.patch.yml"
     },
     "compatibility": {
-      "dsh": ">=0.1.0-rc.6 <0.2.0",
+      "dsh": ">=0.1.2-rc.1 <0.2.0",
       "dshReleases": {
         "rc.7": "compatible",
         "rc.8": "compatible",
         "0.1.1-rc.1": "compatible",
-        "0.1.1-rc.2": "compatible"
+        "0.1.1-rc.2": "compatible",
+        "0.1.2-rc.1": "compatible"
       }
     }
   },
@@ -33,7 +34,7 @@
     "test": "node --test \"test/*.test.mjs\""
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-skill-filesystem": ">=0.1.0-rc.6"
+    "@deepseek-ai/dsh-skill-filesystem": ">=0.1.2-rc.1 <0.2.0"
   },
   "repository": {
     "type": "git",

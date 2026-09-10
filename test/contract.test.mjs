@@ -17,7 +17,7 @@ test('package is a standard lifecycle-free DSH bundle', async () => {
 test('bundle mounts an isolated skill provider without disabling official entries', async () => {
   const patch = await readFile(new URL('cordis.patch.yml', root), 'utf8')
   assert.match(patch, /id:\s*dsh-agent-reach-skill-provider/)
-  assert.match(patch, /name:\s*'@deepseek-ai\/dsh-skill-filesystem'/)
+  assert.match(patch, /name:\s*dsh-agent-reach-skill-provider/)
   assert.match(patch, /providerName:\s*dsh-agent-reach/)
   assert.match(patch, /includeDefaultRoots:\s*false/)
   assert.match(patch, /new URL\('skills\/', baseUrl\)/)

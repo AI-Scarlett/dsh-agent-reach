@@ -1,6 +1,6 @@
 - insert:
     - id: dsh-agent-reach-skill-provider
-      name: '@deepseek-ai/dsh-skill-filesystem'
+      name: dsh-agent-reach-skill-provider
       config:
         providerName: dsh-agent-reach
         includeDefaultRoots: false
